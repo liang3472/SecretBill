@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "rightCurtain",
+    "texture": "da148dbd-c180-4fae-b2c5-f302cb59fb4f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      161,
+      507
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      161,
+      507
+    ]
+  }
+}

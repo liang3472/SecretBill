@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "genesis2",
+    "texture": "acd05764-38b7-4b1b-af1f-1fdebc46902c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      113,
+      133
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      113,
+      133
+    ]
+  }
+}

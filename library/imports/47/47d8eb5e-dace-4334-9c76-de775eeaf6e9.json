@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "simpson3",
+    "texture": "abc68167-ce5d-4575-afac-8367855cb39f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      55,
+      87
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      55,
+      87
+    ]
+  }
+}

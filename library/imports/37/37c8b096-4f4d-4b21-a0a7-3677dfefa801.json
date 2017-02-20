@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "phone_call2",
+    "texture": "c266ab74-2f8d-4696-bf55-b20882d26f6a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      154,
+      78
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      154,
+      78
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "cup3",
+    "texture": "34dc1c89-6b8d-4dfe-a878-5aa9f5b661b7",
+    "atlas": "",
+    "rect": [
+      23,
+      21,
+      72,
+      120
+    ],
+    "offset": [
+      -3,
+      5.5
+    ],
+    "originalSize": [
+      124,
+      173
+    ]
+  }
+}

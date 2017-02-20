@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "d071e02a-5c71-419d-bf7a-314249e0a308",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "enddoor_light": {
+      "ver": "1.0.3",
+      "uuid": "35eb1829-4e48-4fba-aec8-0e60603ae1eb",
+      "rawTextureUuid": "d071e02a-5c71-419d-bf7a-314249e0a308",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 858,
+      "height": 1352,
+      "rawWidth": 858,
+      "rawHeight": 1352,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

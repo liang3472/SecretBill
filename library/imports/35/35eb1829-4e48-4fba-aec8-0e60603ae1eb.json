@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "enddoor_light",
+    "texture": "d071e02a-5c71-419d-bf7a-314249e0a308",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      858,
+      1352
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      858,
+      1352
+    ]
+  }
+}

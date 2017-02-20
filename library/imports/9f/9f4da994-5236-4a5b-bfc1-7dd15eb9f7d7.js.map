@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAI,OAAO,GAAG,OAAO,CAAC,SAAS,CAAC,CAAC;AACjC,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE,EACX;;;AAGD,UAAM,EAAE,kBAAY,EAEnB;;AAED,WAAO,EAAE,mBAAY;AACjB,gBAAQ,CAAC,IAAI,GAAG,kBAAkB,CAAC,OAAO,CAAC,MAAM,CAAC,KAAK,CAAC,CAAC;KAC5D;;;;;;CAMJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "var Gloable = require('Gloable');\ncc.Class({\n    extends: cc.Component,\n\n    properties: {\n    },\n\n    // use this for initialization\n    onLoad: function () {\n\n    },\n    \n    toEleme: function () {\n        location.href = decodeURIComponent(Gloable.CONFiG.goUrl);\n    }\n\n    // called every frame, uncomment this function to activate update callback\n    // update: function (dt) {\n\n    // },\n});\n"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAI,YAAY,GAAG,OAAO,CAAC,cAAc,CAAC,CAAC;AAC3C,IAAI,SAAS,GAAG,OAAO,CAAC,WAAW,CAAC,CAAC;AACrC,IAAI,KAAK,GAAG,OAAO,CAAC,OAAO,CAAC,CAAC;;AAE7B,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE;AACR,gBAAQ,EAAE,YAAY;AACtB,iBAAS,EAAE,SAAS;AACpB,aAAK,EAAE,KAAK;KACf;;;AAGD,UAAM,EAAE,kBAAY;AAChB,YAAI,CAAC,KAAK,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC;AACtB,YAAI,CAAC,SAAS,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC;;AAE1B,gBAAQ,CAAC,gBAAgB,CAAC,2BAA2B,EAAE,YAAY;AAC/D,cAAE,CAAC,IAAI,CAAC,MAAM,EAAE,CAAC;SACpB,CAAC,CAAC;AACH,gBAAQ,CAAC,gBAAgB,CAAC,4BAA4B,EAAE,YAAY;AAChE,cAAE,CAAC,IAAI,CAAC,KAAK,EAAE,CAAC;SACnB,CAAC,CAAC;KACN;;CAMJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "var SoundManager = require('SoundManager');\nvar DoorLight = require('DoorLight');\nvar Music = require('Music');\n\ncc.Class({\n    extends: cc.Component,\n\n    properties: {\n        soundMng: SoundManager,\n        doorLight: DoorLight,\n        music: Music\n    },\n\n    // use this for initialization\n    onLoad: function () {\n        this.music.init(this);\n        this.doorLight.init(this);\n\n        document.addEventListener('eleme_app_didBecomeActive', function () {\n            cc.game.resume();\n        });\n        document.addEventListener('eleme_app_willResignActive', function () {\n            cc.game.pause();\n        });\n    },\n\n    // called every frame, uncomment this function to activate update callback\n    // update: function (dt) {\n\n    // },\n});\n"
+  ]
+}

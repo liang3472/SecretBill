@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "paris1",
+    "texture": "202dfce1-6c5b-4e18-81c3-fbf366c5271d",
+    "atlas": "",
+    "rect": [
+      1,
+      4,
+      136,
+      169
+    ],
+    "offset": [
+      0,
+      2.5
+    ],
+    "originalSize": [
+      138,
+      182
+    ]
+  }
+}

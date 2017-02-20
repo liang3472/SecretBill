@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "deskLightRight",
+    "texture": "566980a9-d806-40f6-859c-d0bde35fc85c",
+    "atlas": "",
+    "rect": [
+      0,
+      1,
+      404,
+      512
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      404,
+      513
+    ]
+  }
+}

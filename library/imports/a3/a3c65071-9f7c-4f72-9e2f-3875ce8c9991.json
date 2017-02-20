@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "leftCurtain4",
+    "texture": "1d055cdc-3dc5-4f2d-a29c-795d0fd42d4c",
+    "atlas": "",
+    "rect": [
+      124,
+      43,
+      200,
+      507
+    ],
+    "offset": [
+      -26,
+      3
+    ],
+    "originalSize": [
+      500,
+      599
+    ]
+  }
+}

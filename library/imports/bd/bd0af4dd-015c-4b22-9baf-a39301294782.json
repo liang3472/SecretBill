@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "shoeBox1",
+    "texture": "357484d1-d82b-446d-96e0-80ae36fd203f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      226,
+      355
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      226,
+      355
+    ]
+  }
+}

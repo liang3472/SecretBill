@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE;AACR,aAAK,EAAE,EAAE,CAAC,IAAI;AACd,aAAK,EAAE,EAAE,CAAC,IAAI;KACjB;;;AAGD,UAAM,EAAE,kBAAY;AAChB,YAAI,CAAC,SAAS,GAAG,IAAI,CAAC,KAAK,CAAC,YAAY,CAAC,EAAE,CAAC,SAAS,CAAC,CAAC;AACvD,YAAI,CAAC,SAAS,GAAG,IAAI,CAAC,KAAK,CAAC,YAAY,CAAC,EAAE,CAAC,SAAS,CAAC,CAAC;KAC1D;;AAED,YAAQ,EAAE,oBAAY;AAClB,YAAI,CAAC,SAAS,CAAC,IAAI,CAAC,OAAO,CAAC,CAAC;AAC7B,YAAI,CAAC,SAAS,CAAC,IAAI,CAAC,OAAO,CAAC,CAAC;KAChC;;;;;;CAMJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\n    extends: cc.Component,\n\n    properties: {\n        text1: cc.Node,\n        text2: cc.Node\n    },\n\n    // use this for initialization\n    onLoad: function () {\n        this.text1Anim = this.text1.getComponent(cc.Animation);\n        this.text2Anim = this.text2.getComponent(cc.Animation);\n    },\n\n    showText: function () {\n        this.text1Anim.play('text1');\n        this.text2Anim.play('text2');\n    }\n\n    // called every frame, uncomment this function to activate update callback\n    // update: function (dt) {\n\n    // },\n});\n"
+  ]
+}

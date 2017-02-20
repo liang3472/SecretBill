@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAI,OAAO,GAAG,OAAO,CAAC,SAAS,CAAC,CAAC;;AAEjC,EAAE,CAAC,KAAK,CAAC;AACP,aAAS,EAAE,CAAC,SAAS;;AAErB,YAAU,EAAE;AACV,UAAM,EAAE,EAAE,CAAC,aAAa;AACxB,WAAO,EAAE,EAAE,CAAC,aAAa;AACzB,WAAO,EAAE,EAAE,CAAC,SAAS;AACrB,YAAQ,EAAE,EAAE,CAAC,SAAS;GACvB;;;AAGD,QAAM,EAAE,kBAAY;AAClB,QAAI,CAAC,KAAK,GAAG,KAAK,CAAC;AACnB,QAAI,CAAC,SAAS,GAAG,IAAI,CAAC,IAAI,CAAC,YAAY,CAAC,EAAE,CAAC,SAAS,CAAC,CAAC;GACvD;;AAED,SAAO,EAAE,mBAAY;AACnB,QAAI,CAAC,KAAK,GAAG,CAAC,IAAI,CAAC,KAAK,CAAC;AACzB,QAAI,IAAI,CAAC,KAAK,EAAE;AACd,UAAI,CAAC,SAAS,CAAC,OAAO,CAAC,IAAI,CAAC,OAAO,EAAE,QAAQ,CAAC,CAAC;KAChD,MAAM;AACL,UAAI,CAAC,SAAS,CAAC,OAAO,CAAC,IAAI,CAAC,MAAM,EAAE,QAAQ,CAAC,CAAC;KAC/C;GACF;;AAED,WAAS,EAAE,qBAAY;AACrB,QAAI,CAAC,IAAI,CAAC,KAAK,EAAE;AACf,UAAI,CAAC,SAAS,CAAC,IAAI,CAAC,OAAO,CAAC,CAAC;KAC9B,MAAM;AACL,UAAI,CAAC,SAAS,CAAC,IAAI,CAAC,QAAQ,CAAC,CAAC;KAC/B;GACF;;;;;AAKD,WAAS,EAAE,mBAAU,KAAK,EAAE;AAC1B,QAAG,KAAK,IAAI,OAAO,CAAC,eAAe,EAAC;AAClC,QAAE,CAAC,WAAW,CAAC,UAAU,CAAC,KAAK,EAAE,KAAK,CAAC,CAAC;KACzC;GACF;;AAED,UAAQ,EAAE,oBAAY;AACpB,WAAO,CAAC,IAAI,CAAC,KAAK,CAAC;GACpB;CACF,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "var Gloable = require('Gloable');\n\ncc.Class({\n  extends: cc.Component,\n\n  properties: {\n    onAnim: cc.AnimationClip,\n    offAnim: cc.AnimationClip,\n    onAudio: cc.AudioClip,\n    offAudio: cc.AudioClip,\n  },\n\n  // use this for initialization\n  onLoad: function () {\n    this.state = false;\n    this.animation = this.node.getComponent(cc.Animation);\n  },\n\n  animEnd: function () {\n    this.state = !this.state;\n    if (this.state) {\n      this.animation.addClip(this.offAnim, 'target');\n    } else {\n      this.animation.addClip(this.onAnim, 'target');\n    }\n  },\n\n  animStart: function () {\n    if (!this.state) {\n      this.playSound(this.onAudio);\n    } else {\n      this.playSound(this.offAudio);\n    }\n  },\n\n  /**\n   * 播放音效(不循环)\n   */\n  playSound: function (sound) {\n    if(sound && Gloable.shouldPlayAudio){\n      cc.audioEngine.playEffect(sound, false);\n    }\n  },\n\n  getState: function () {\n    return !this.state;\n  }\n});\n"
+  ]
+}

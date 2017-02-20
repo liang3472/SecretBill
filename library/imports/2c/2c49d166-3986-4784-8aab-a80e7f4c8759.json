@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "monalisa1",
+    "texture": "6c82c41c-aae6-4ec4-a5f3-c2e759fd8407",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      86,
+      152
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      86,
+      152
+    ]
+  }
+}

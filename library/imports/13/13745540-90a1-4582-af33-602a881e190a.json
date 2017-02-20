@@ -1,0 +1,55 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "phone_light",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.0166666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "62daafb1-a6ce-4515-87ad-081dd88bb8c2"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "184aae67-5542-46cc-b724-a18a94e39d58"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "6075c6fc-ee43-4391-9dab-bfcd289524a2"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "5f0ccd30-34f2-423f-bec2-7c16e9a570a2"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "af6108a0-b682-4ab5-b3d0-c475f867cc98"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "62daafb1-a6ce-4515-87ad-081dd88bb8c2"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

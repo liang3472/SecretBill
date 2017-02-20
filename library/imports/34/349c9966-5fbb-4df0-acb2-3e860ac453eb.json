@@ -1,0 +1,55 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "cup",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.85,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "0915c5a9-205b-45ba-b614-90e5aa41636b"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "59a42704-dd23-4449-a75d-d587dce97a20"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "608fe5f3-7400-4ff8-a5f8-5add9118e982"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "5528a457-e3fd-405b-8755-a77a2d2c573c"
+            }
+          },
+          {
+            "frame": 0.6666666666666666,
+            "value": {
+              "__uuid__": "17cae421-fa18-42f8-add9-a452792a9fb2"
+            }
+          },
+          {
+            "frame": 0.8333333333333334,
+            "value": {
+              "__uuid__": "0915c5a9-205b-45ba-b614-90e5aa41636b"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

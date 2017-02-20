@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAI,OAAO,GAAG,OAAO,CAAC,SAAS,CAAC,CAAC;AACjC,EAAE,CAAC,KAAK,CAAC;AACP,aAAS,EAAE,CAAC,SAAS;;AAErB,YAAU,EAAE;AACV,OAAG,EAAE,EAAE,CAAC,IAAI;AACZ,aAAS,EAAE,EAAE,CAAC,SAAS;AACvB,cAAU,EAAE,EAAE,CAAC,SAAS;AACxB,YAAQ,EAAE,EAAE,CAAC,SAAS;GACvB;;AAED,OAAK,EAAE,iBAAY;AACjB,QAAI,CAAC,GAAG,CAAC,MAAM,GAAG,IAAI,CAAC;AACvB,QAAI,CAAC,SAAS,CAAC,IAAI,CAAC,QAAQ,CAAC,CAAC;GAC/B;;AAED,OAAK,EAAE,iBAAY;AACjB,QAAI,CAAC,GAAG,CAAC,MAAM,GAAG,KAAK,CAAC;GACzB;;AAED,MAAI,EAAE,gBAAY;AAChB,QAAI,CAAC,SAAS,CAAC,IAAI,CAAC,SAAS,CAAC,CAAC;GAChC;;AAED,OAAK,EAAE,iBAAY;AACjB,QAAI,CAAC,SAAS,CAAC,IAAI,CAAC,UAAU,CAAC,CAAC;GACjC;;;;;AAKD,WAAS,EAAE,mBAAU,KAAK,EAAE;AAC1B,QAAG,KAAK,IAAI,OAAO,CAAC,eAAe,EAAC;AAClC,QAAE,CAAC,WAAW,CAAC,UAAU,CAAC,KAAK,EAAE,KAAK,CAAC,CAAC;KACzC;GACF;;;;;;CAMF,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "var Gloable = require('Gloable');\ncc.Class({\n  extends: cc.Component,\n\n  properties: {\n    say: cc.Node,\n    openAudio: cc.AudioClip,\n    closeAudio: cc.AudioClip,\n    sayAudio: cc.AudioClip\n  },\n\n  onSay: function () {\n    this.say.active = true;\n    this.playSound(this.sayAudio);\n  },\n\n  onEnd: function () {\n    this.say.active = false;\n  },\n\n  open: function () {\n    this.playSound(this.openAudio);\n  },\n  \n  close: function () {\n    this.playSound(this.closeAudio);\n  },\n\n  /**\n   * 播放音效(不循环)\n   */\n  playSound: function (sound) {\n    if(sound && Gloable.shouldPlayAudio){\n      cc.audioEngine.playEffect(sound, false);\n    }\n  }\n\n  // called every frame, uncomment this function to activate update callback\n  // update: function (dt) {\n\n  // },\n});\n"
+  ]
+}

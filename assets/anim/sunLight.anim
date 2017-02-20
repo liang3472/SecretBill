@@ -1,0 +1,62 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "sunLight",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "opacity": [
+        {
+          "frame": 0.016666666666666666,
+          "value": 0
+        },
+        {
+          "frame": 0.8333333333333334,
+          "value": 255
+        },
+        {
+          "frame": 1.5,
+          "value": 0
+        }
+      ],
+      "color": [
+        {
+          "frame": 0.016666666666666666,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 255,
+            "g": 202,
+            "b": 98,
+            "a": 255
+          }
+        },
+        {
+          "frame": 0.8333333333333334,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          }
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "frame": 0.8333333333333334,
+      "func": "maxLight",
+      "params": []
+    },
+    {
+      "frame": 1.5,
+      "func": "animEnd",
+      "params": []
+    }
+  ]
+}

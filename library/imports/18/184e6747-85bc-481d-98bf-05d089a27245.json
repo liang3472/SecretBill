@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "say_bg",
+    "texture": "ee2f34dd-3b3e-47ba-bed5-cf16191280fc",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      364,
+      147
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      364,
+      148
+    ],
+    "capInsets": [
+      0,
+      19,
+      0,
+      43
+    ]
+  }
+}

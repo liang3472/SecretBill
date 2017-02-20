@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "einstein2",
+    "texture": "7e25f06c-2952-4417-9dd6-c7e112888f38",
+    "atlas": "",
+    "rect": [
+      4,
+      2,
+      66,
+      120
+    ],
+    "offset": [
+      2,
+      -0.5
+    ],
+    "originalSize": [
+      70,
+      123
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "radio7",
+    "texture": "f0b1fd68-9152-47a9-b6e7-c36eee43193b",
+    "atlas": "",
+    "rect": [
+      36,
+      47,
+      220,
+      123
+    ],
+    "offset": [
+      -1,
+      -3.5
+    ],
+    "originalSize": [
+      294,
+      210
+    ]
+  }
+}

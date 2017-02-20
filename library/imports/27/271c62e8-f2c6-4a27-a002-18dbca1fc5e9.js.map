@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE;AACR,cAAM,EAAE,EAAE,CAAC,IAAI;AACf,YAAI,EAAE,EAAE,CAAC,IAAI;KAChB;;;AAGD,QAAI,EAAE,gBAAY;AACd,YAAI,CAAC,eAAe,GAAG,IAAI,CAAC,MAAM,CAAC,YAAY,CAAC,EAAE,CAAC,SAAS,CAAC,CAAC;AAC9D,YAAI,CAAC,aAAa,GAAG,IAAI,CAAC,IAAI,CAAC,YAAY,CAAC,EAAE,CAAC,SAAS,CAAC,CAAC;KAC7D;;AAED,QAAI,EAAE,gBAAY;AACd,YAAI,CAAC,IAAI,CAAC,MAAM,GAAG,IAAI,CAAC;AACxB,YAAG,IAAI,CAAC,eAAe,EAAC;AACpB,gBAAI,CAAC,eAAe,CAAC,IAAI,CAAC,aAAa,CAAC,CAAC;SAC5C;AACD,YAAG,IAAI,CAAC,aAAa,EAAC;AAClB,gBAAI,CAAC,aAAa,CAAC,IAAI,CAAC,WAAW,CAAC,CAAC;SACxC;KACJ;;AAED,UAAM,EAAE,kBAAY;AAChB,YAAG,IAAI,CAAC,eAAe,EAAC;AACpB,gBAAI,CAAC,eAAe,CAAC,IAAI,CAAC,eAAe,CAAC,CAAC;SAC9C;AACD,YAAG,IAAI,CAAC,aAAa,EAAC;AAClB,gBAAI,CAAC,aAAa,CAAC,IAAI,CAAC,aAAa,CAAC,CAAC;SAC1C;KACJ;;;;;;CAMJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\n    extends: cc.Component,\n\n    properties: {\n        breath: cc.Node,\n        smok: cc.Node\n    },\n\n    // use this for initialization\n    init: function () {\n        this.breathAnimation = this.breath.getComponent(cc.Animation);\n        this.smokAnimation = this.smok.getComponent(cc.Animation);\n    },\n\n    show: function () {\n        this.node.active = true;\n        if(this.breathAnimation){\n            this.breathAnimation.play('breath_show');\n        }\n        if(this.smokAnimation){\n            this.smokAnimation.play('smok_show');\n        }\n    },\n\n    dimiss: function () {\n        if(this.breathAnimation){\n            this.breathAnimation.play('breath_dimiss');\n        }\n        if(this.smokAnimation){\n            this.smokAnimation.play('smok_dimiss');\n        }\n    }\n\n    // called every frame, uncomment this function to activate update callback\n    // update: function (dt) {\n\n    // },\n});\n"
+  ]
+}

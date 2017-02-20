@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "drawer_right_open",
+    "texture": "9c3602d6-f7f5-4429-abcb-8643d068bd6d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      359,
+      88
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      359,
+      88
+    ]
+  }
+}

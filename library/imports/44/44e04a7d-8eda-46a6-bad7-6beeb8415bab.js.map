@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,EAAE,CAAC,KAAK,CAAC;AACP,aAAS,EAAE,CAAC,SAAS;;AAErB,YAAU,EAAE,EAAE;;AAEd,SAAO,EAAE,mBAAY,EACpB;;AAED,QAAM,EAAE,kBAAY,EACnB;;AAED,OAAK,EAAE,iBAAY,EAClB;;AAED,MAAI,EAAE,gBAAY,EACjB;;;;;;CAMF,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\n  extends: cc.Component,\n\n  properties: {},\n\n  toShare: function () {\n  },\n\n  toShow: function () {\n  },\n\n  toVip: function () {\n  },\n\n  toGo: function () {\n  }\n\n  // called every frame, uncomment this function to activate update callback\n  // update: function (dt) {\n\n  // },\n});\n"
+  ]
+}

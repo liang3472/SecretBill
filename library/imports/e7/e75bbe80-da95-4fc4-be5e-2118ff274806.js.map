@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE;AACR,gBAAQ,EAAE,EAAE;KACf;;AAED,WAAO,EAAE,mBAAY;AACjB,YAAI,CAAC,IAAI,CAAC,aAAa,CAAC,IAAI,EAAE,CAAC,KAAK,CAAC,WAAW,CAAC,IAAI,CAAC,QAAQ,EAAE,IAAI,CAAC,CAAC,CAAC;KAC1E;;CAEJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\n    extends: cc.Component,\n\n    properties: {\n        animName: ''\n    },\n\n    animEnd: function () {\n        this.node.dispatchEvent(new cc.Event.EventCustom(this.animName, true));\n    }\n\n});\n"
+  ]
+}

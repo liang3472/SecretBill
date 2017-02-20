@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "phone_light4",
+    "texture": "21a79b32-20eb-4345-95d8-0eafe2e43f7a",
+    "atlas": "",
+    "rect": [
+      43,
+      65,
+      151,
+      78
+    ],
+    "offset": [
+      8,
+      6.5
+    ],
+    "originalSize": [
+      221,
+      221
+    ]
+  }
+}

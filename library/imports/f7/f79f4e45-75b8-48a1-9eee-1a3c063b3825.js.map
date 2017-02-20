@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAI,OAAO,GAAG,OAAO,CAAC,SAAS,CAAC,CAAC;;AAEjC,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE;AACR,qBAAa,EAAE,EAAE,CAAC,aAAa;AAC/B,aAAK,EAAE,EAAE,CAAC,SAAS;KACtB;;;AAGD,UAAM,EAAE,kBAAY,EAEnB;;AAED,eAAW,EAAE,uBAAY;AACrB,YAAI,SAAS,GAAG,IAAI,CAAC,IAAI,CAAC,YAAY,CAAC,EAAE,CAAC,SAAS,CAAC,CAAC;AACrD,iBAAS,CAAC,OAAO,CAAC,IAAI,CAAC,aAAa,EAAE,QAAQ,CAAC,CAAC;AAChD,iBAAS,CAAC,IAAI,CAAC,QAAQ,CAAC,CAAC;AACzB,YAAI,CAAC,SAAS,CAAC,IAAI,CAAC,KAAK,CAAC,CAAC;KAC9B;;AAED,eAAW,EAAE,uBAAY;AACrB,YAAI,CAAC,IAAI,CAAC,aAAa,CAAC,IAAI,EAAE,CAAC,KAAK,CAAC,WAAW,CAAC,aAAa,EAAE,IAAI,CAAC,CAAC,CAAC;KAC1E;;;;;AAKD,aAAS,EAAE,mBAAU,KAAK,EAAE;AACxB,YAAG,KAAK,IAAI,OAAO,CAAC,eAAe,EAAC;AAChC,cAAE,CAAC,WAAW,CAAC,UAAU,CAAC,KAAK,EAAE,KAAK,CAAC,CAAC;SAC3C;KACJ;;;;;;CAMJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "var Gloable = require('Gloable');\n\ncc.Class({\n    extends: cc.Component,\n\n    properties: {\n        phoneCallAnim: cc.AnimationClip,\n        audio: cc.AudioClip,\n    },\n\n    // use this for initialization\n    onLoad: function () {\n\n    },\n\n    playEndAnim: function () {\n        var animation = this.node.getComponent(cc.Animation);\n        animation.addClip(this.phoneCallAnim, 'target');\n        animation.play('target');\n        this.playSound(this.audio);\n    },\n\n    gameAnimEnd: function () {\n        this.node.dispatchEvent(new cc.Event.EventCustom('GameAnimEnd', true));\n    },\n\n    /**\n     * 播放音效(不循环)\n     */\n    playSound: function (sound) {\n        if(sound && Gloable.shouldPlayAudio){\n            cc.audioEngine.playEffect(sound, false);\n        }\n    }\n\n    // called every frame, uncomment this function to activate update callback\n    // update: function (dt) {\n\n    // },\n});\n"
+  ]
+}

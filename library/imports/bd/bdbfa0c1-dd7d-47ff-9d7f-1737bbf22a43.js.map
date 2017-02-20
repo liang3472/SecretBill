@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAI,QAAQ,GAAG,OAAO,CAAC,UAAU,CAAC,CAAC;AACnC,IAAI,KAAK,GAAG,OAAO,CAAC,OAAO,CAAC,CAAC;;AAE7B,EAAE,CAAC,KAAK,CAAC;AACP,aAAS,EAAE,CAAC,SAAS;;AAErB,YAAU,EAAE;AACV,UAAM,EAAE,EAAE,CAAC,IAAI;AACf,YAAQ,EAAE,QAAQ;AAClB,YAAQ,EAAE,EAAE,CAAC,IAAI;AACjB,SAAK,EAAE,KAAK;GACb;;;AAGD,QAAM,EAAE,kBAAY;AAClB,QAAI,CAAC,KAAK,CAAC,IAAI,EAAE,CAAC;AAClB,QAAI,CAAC,SAAS,GAAG,IAAI,CAAC,IAAI,CAAC,YAAY,CAAC,EAAE,CAAC,SAAS,CAAC,CAAC;GACvD;;AAED,MAAI,EAAE,gBAAY;AAChB,QAAI,CAAC,IAAI,CAAC,MAAM,GAAG,IAAI,CAAC;AACxB,QAAI,CAAC,SAAS,CAAC,IAAI,CAAC,UAAU,CAAC,CAAC;GACjC;;AAED,UAAQ,EAAE,oBAAY;AACpB,QAAI,CAAC,MAAM,CAAC,MAAM,GAAG,KAAK,CAAC;AAC3B,QAAI,CAAC,QAAQ,CAAC,IAAI,CAAC,MAAM,GAAG,IAAI,CAAC;GAClC;;AAED,SAAO,EAAE,mBAAY;AACnB,QAAI,CAAC,IAAI,CAAC,MAAM,GAAG,KAAK,CAAC;AACzB,QAAI,CAAC,QAAQ,CAAC,QAAQ,EAAE,CAAC;AACzB,QAAI,CAAC,QAAQ,CAAC,gBAAgB,EAAE,CAAC;AACjC,QAAI,CAAC,KAAK,CAAC,MAAM,EAAE,CAAC;GACrB;;;;;;CAMF,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "var OpenDoor = require('OpenDoor');\nvar EndBg = require('EndBg');\n\ncc.Class({\n  extends: cc.Component,\n\n  properties: {\n    doorBg: cc.Node,\n    openDoor: OpenDoor,\n    dooLight: cc.Node,\n    endBg: EndBg\n  },\n\n  // use this for initialization\n  onLoad: function () {\n    this.endBg.init();\n    this.animation = this.node.getComponent(cc.Animation);\n  },\n\n  show: function () {\n    this.node.active = true;\n    this.animation.play('sunLight');\n  },\n  \n  maxLight: function () {\n    this.doorBg.active = false;\n    this.openDoor.node.active = true;\n  },\n  \n  animEnd: function () {\n    this.node.active = false;\n    this.openDoor.showText();\n    this.dooLight.removeFromParent();\n    this.endBg.showBg();\n  }\n\n  // called every frame, uncomment this function to activate update callback\n  // update: function (dt) {\n\n  // },\n});\n"
+  ]
+}

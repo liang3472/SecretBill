@@ -1,0 +1,72 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "smok_show",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.1666666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "y": [
+        {
+          "frame": 0,
+          "value": -1056,
+          "curve": "quartOut"
+        },
+        {
+          "frame": 1.1666666666666667,
+          "value": -683
+        }
+      ],
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 0.1666666666666667,
+          "value": 255
+        },
+        {
+          "frame": 0.4166666666666667,
+          "value": 255
+        },
+        {
+          "frame": 1.1666666666666667,
+          "value": 0
+        }
+      ],
+      "scaleX": [
+        {
+          "frame": 0.3333333333333333,
+          "value": 1
+        },
+        {
+          "frame": 0.4166666666666667,
+          "value": 1
+        },
+        {
+          "frame": 1.1666666666666667,
+          "value": 1.5
+        }
+      ],
+      "scaleY": [
+        {
+          "frame": 0.3333333333333333,
+          "value": 1
+        },
+        {
+          "frame": 0.4166666666666667,
+          "value": 1
+        },
+        {
+          "frame": 1.1666666666666667,
+          "value": 1.5
+        }
+      ]
+    }
+  },
+  "events": []
+}

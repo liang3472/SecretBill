@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "books23",
+    "texture": "ac131dca-e5a1-41be-b2de-5bcfcbfa8907",
+    "atlas": "",
+    "rect": [
+      44,
+      0,
+      202,
+      168
+    ],
+    "offset": [
+      3.5,
+      23
+    ],
+    "originalSize": [
+      283,
+      214
+    ]
+  }
+}

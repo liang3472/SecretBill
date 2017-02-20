@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAI,OAAO,GAAG,OAAO,CAAC,SAAS,CAAC,CAAC;AACjC,EAAE,CAAC,KAAK,CAAC;AACP,aAAS,EAAE,CAAC,SAAS;;AAErB,YAAU,EAAE;AACV,YAAQ,EAAE,EAAE,CAAC,SAAS;AACtB,YAAQ,EAAE,EAAE,CAAC,SAAS;AACtB,WAAO,EAAE,EAAE,CAAC,SAAS;AACrB,aAAS,EAAE,EAAE,CAAC,SAAS;AACvB,SAAK,EAAE,EAAE,CAAC,SAAS;AACnB,UAAM,EAAE,IAAI;GACb;;AAED,WAAS,EAAE,qBAAY;AACrB,QAAI,CAAC,SAAS,CAAC,IAAI,CAAC,KAAK,CAAC,CAAC;GAC5B;;AAED,aAAW,EAAE,uBAAY;AACvB,QAAI,CAAC,SAAS,CAAC,IAAI,CAAC,OAAO,CAAC,CAAC;GAC9B;;AAED,cAAY,EAAE,wBAAY;AACxB,QAAI,CAAC,SAAS,CAAC,IAAI,CAAC,QAAQ,CAAC,CAAC;GAC/B;;AAED,eAAa,EAAE,yBAAY;AACzB,QAAI,CAAC,cAAc,GAAG,IAAI,CAAC,SAAS,CAAC,IAAI,CAAC,SAAS,CAAC,CAAC;GACtD;;AAED,gBAAc,EAAE,0BAAY;AAC1B,MAAE,CAAC,WAAW,CAAC,KAAK,CAAC,IAAI,CAAC,cAAc,CAAC,CAAC;GAC3C;;;;;AAKD,WAAS,EAAE,mBAAU,KAAK,EAAE;AAC1B,QAAI,KAAK,IAAI,OAAO,CAAC,eAAe,EAAE;AACpC,UAAI,EAAE,GAAG,EAAE,CAAC,WAAW,CAAC,UAAU,CAAC,KAAK,EAAE,KAAK,CAAC,CAAC;AACjD,aAAO,EAAE,CAAC;KACX;AACD,WAAO,IAAI,CAAC;GACb;;;;;AAKD,cAAY,EAAE,wBAAY;AACxB,QAAI,CAAC,KAAK,GAAG,EAAE,CAAC,WAAW,CAAC,UAAU,CAAC,IAAI,CAAC,QAAQ,EAAE,IAAI,CAAC,MAAM,CAAC,CAAC;GACpE;;AAED,eAAa,EAAE,yBAAY;AACzB,MAAE,CAAC,WAAW,CAAC,KAAK,CAAC,IAAI,CAAC,KAAK,CAAC,CAAC;GAClC;CACF,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "var Gloable = require('Gloable');\ncc.Class({\n  extends: cc.Component,\n\n  properties: {\n    bgmAudio: cc.AudioClip,\n    pickBill: cc.AudioClip,\n    findKey: cc.AudioClip,\n    doorLight: cc.AudioClip,\n    knock: cc.AudioClip,\n    isLoop: true\n  },\n\n  playKnock: function () {\n    this.playSound(this.knock);\n  },\n\n  playFindKey: function () {\n    this.playSound(this.findKey);\n  },\n\n  playPickBill: function () {\n    this.playSound(this.pickBill);\n  },\n\n  playDoorLight: function () {\n    this.doorLightAudio = this.playSound(this.doorLight);\n  },\n\n  psuseDoorLight: function () {\n    cc.audioEngine.pause(this.doorLightAudio);\n  },\n\n  /**\n   * 播放音效(不循环)\n   */\n  playSound: function (sound) {\n    if (sound && Gloable.shouldPlayAudio) {\n      var id = cc.audioEngine.playEffect(sound, false);\n      return id;\n    }\n    return null;\n  },\n\n  /**\n   * 播放音效(不循环)\n   */\n  playBGMSound: function () {\n    this.bgmId = cc.audioEngine.playEffect(this.bgmAudio, this.isLoop);\n  },\n\n  pauseBGMSound: function () {\n    cc.audioEngine.pause(this.bgmId);\n  }\n});\n"
+  ]
+}

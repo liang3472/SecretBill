@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "carpet",
+    "texture": "884a42f5-03cc-41ac-a5be-62072fd15818",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1067,
+      319
+    ],
+    "offset": [
+      0,
+      4.5
+    ],
+    "originalSize": [
+      1067,
+      328
+    ]
+  }
+}

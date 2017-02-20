@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAI,MAAM,GAAG,OAAO,CAAC,QAAQ,CAAC,CAAC;;AAE/B,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE;AACR,cAAM,EAAE,MAAM;KACjB;;;AAGD,QAAI,EAAE,gBAAY;AACd,YAAI,CAAC,MAAM,CAAC,IAAI,EAAE,CAAC;AACnB,YAAI,CAAC,SAAS,GAAG,IAAI,CAAC,IAAI,CAAC,YAAY,CAAC,EAAE,CAAC,SAAS,CAAC,CAAC;KACzD;;AAED,UAAM,EAAE,kBAAY;AAChB,YAAI,CAAC,IAAI,CAAC,MAAM,GAAG,IAAI,CAAC;AACxB,YAAI,CAAC,SAAS,CAAC,IAAI,CAAC,OAAO,CAAC,CAAC;KAChC;;AAED,cAAU,EAAE,sBAAY;AACpB,YAAI,CAAC,MAAM,CAAC,UAAU,EAAE,CAAC;KAC5B;;;;;;CAMJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "var Option = require('Option');\n\ncc.Class({\n    extends: cc.Component,\n\n    properties: {\n        option: Option,\n    },\n\n    // use this for initialization\n    init: function () {\n        this.option.init();\n        this.animation = this.node.getComponent(cc.Animation);\n    },\n\n    showBg: function () {\n        this.node.active = true;\n        this.animation.play('endBg');\n    },\n\n    showOption: function () {\n        this.option.showOption();\n    }\n\n    // called every frame, uncomment this function to activate update callback\n    // update: function (dt) {\n\n    // },\n});\n"
+  ]
+}

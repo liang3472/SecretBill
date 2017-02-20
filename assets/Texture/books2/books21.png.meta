@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "fa9473a2-c4fa-40a7-b973-863f4a148ea4",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "books21": {
+      "ver": "1.0.3",
+      "uuid": "7fa42d59-aa9c-4b91-a700-80e545d660ed",
+      "rawTextureUuid": "fa9473a2-c4fa-40a7-b973-863f4a148ea4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 3.5,
+      "offsetY": 23,
+      "trimX": 44,
+      "trimY": 0,
+      "width": 202,
+      "height": 168,
+      "rawWidth": 283,
+      "rawHeight": 214,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

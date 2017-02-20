@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAI,QAAQ,GAAG,OAAO,CAAC,UAAU,CAAC,CAAC;;AAEnC,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE;AACR,gBAAQ,EAAE,QAAQ;KACrB;;;AAGD,QAAI,EAAE,cAAU,IAAI,EAAE;AAClB,YAAI,CAAC,IAAI,GAAG,IAAI,CAAC;AACjB,YAAI,CAAC,KAAK,GAAG,KAAK,CAAC;;AAEnB,YAAI,CAAC,IAAI,CAAC,EAAE,CAAC,YAAY,EAAE,CAAA,YAAY;AACnC,gBAAI,CAAC,IAAI,CAAC,QAAQ,CAAC,cAAc,EAAE,CAAC;AACpC,gBAAI,CAAC,QAAQ,CAAC,IAAI,EAAE,CAAC;SACxB,CAAA,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC,CAAC;KACjB;;AAED,aAAS,EAAE,qBAAY;AACnB,YAAG,CAAC,IAAI,CAAC,KAAK,EAAC;AACX,gBAAI,CAAC,IAAI,CAAC,QAAQ,CAAC,aAAa,EAAE,CAAC;AACnC,gBAAI,CAAC,KAAK,GAAG,IAAI,CAAC;SACrB;KACJ;;;;;;CAMJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "var SunLight = require('SunLight');\n\ncc.Class({\n    extends: cc.Component,\n\n    properties: {\n        sunLight: SunLight,\n    },\n\n    // use this for initialization\n    init: function (game) {\n        this.game = game;\n        this.state = false;\n\n        this.node.on('touchstart', function () {\n            this.game.soundMng.psuseDoorLight();\n            this.sunLight.show();\n        }.bind(this));\n    },\n    \n    animStart: function () {\n        if(!this.state){\n            this.game.soundMng.playDoorLight();\n            this.state = true;\n        }\n    }\n\n    // called every frame, uncomment this function to activate update callback\n    // update: function (dt) {\n\n    // },\n});\n"
+  ]
+}

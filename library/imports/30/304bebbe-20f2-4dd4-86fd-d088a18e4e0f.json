@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bill",
+    "texture": "65d02a71-a740-45fc-aa49-aecb010bd09c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      256,
+      153
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      256,
+      153
+    ]
+  }
+}

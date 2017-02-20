@@ -1,0 +1,213 @@
+html {
+    -ms-touch-action: none;
+}
+
+body, canvas, div {
+    display: block;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Remove spin of input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+
+    cursor: default;
+    color: #888;
+    background-color: #333;
+
+    text-align: center;
+    font-family: PingFang SC, Lantinghei SC, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#Cocos2dGameContainer {
+    position: absolute;
+    margin: 0;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+canvas {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+a:link, a:visited {
+    color: #666;
+}
+
+a:active, a:hover {
+    color: #666;
+}
+
+p.header {
+    font-size: small;
+}
+
+p.footer {
+    font-size: x-small;
+}
+
+#splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/loading_bg.png) no-repeat center;
+    background-size: 100% auto;
+}
+
+.bill-box {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 50%;
+    margin-top: -3rem;
+    left: 50%;
+    margin-left: -2rem;
+}
+
+.p1 {
+    position: absolute;
+    width: 3.41rem;
+    height: 2.56rem;
+    background: url(img/p1.png) no-repeat center;
+    background-size: 100% auto;
+    top: 0.8rem;
+    left: -0.4rem;
+    -webkit-animation: kf-p 2s ease-in-out infinite;
+    animation: kf-p 2s ease-in-out infinite;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.p2 {
+    position: absolute;
+    width: 1.85rem;
+    height: 1.59rem;
+    background: url(img/p2.png) no-repeat center;
+    background-size: 100% auto;
+    -webkit-animation: kf-p 2s ease-in-out infinite;
+    animation: kf-p 2s ease-in-out infinite;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.p3 {
+    position: absolute;
+    width: 2.71rem;
+    height: 2.39rem;
+    background: url(img/p3.png) no-repeat center;
+    background-size: 100% auto;
+    left: 0.7rem;
+    top: -0.1rem;
+    -webkit-animation: kf-p 2s ease-in-out infinite;
+    animation: kf-p 2s ease-in-out infinite;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.p4 {
+    position: absolute;
+    width: 2.17rem;
+    height: 2.37rem;
+    background: url(img/p4.png) no-repeat center;
+    background-size: 100% auto;
+    left: 2.4rem;
+    top: 0.5rem;
+    -webkit-animation: kf-p 2s ease-in-out infinite;
+    animation: kf-p 2s ease-in-out infinite;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.p5 {
+    position: absolute;
+    width: 2.33rem;
+    height: 2.12rem;
+    background: url(img/p5.png) no-repeat center;
+    background-size: 100% auto;
+    left: 1.8rem;
+    top: 1.7rem;
+    -webkit-animation: kf-p 2s ease-in-out infinite;
+    animation: kf-p 2s ease-in-out infinite;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.progress {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    left: 10%;
+    top: 50%;
+    margin-top: 0.5rem;
+}
+
+.progress p {
+    margin: 0.1rem;
+    color: #fff;
+    font-size: 0.4rem;
+    line-height: 0.4rem;
+}
+
+@-webkit-keyframes kf-p {
+    0%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(-0.2rem);
+        transform: translateY(-0.2rem);
+    }
+}
+
+@keyframes kf-p {
+    00%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(-0.2rem);
+        transform: translateY(-0.2rem);
+    }
+}

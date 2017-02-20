@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "shelf_mask",
+    "texture": "7b377a96-96be-4f77-8132-97f214094dd7",
+    "atlas": "",
+    "rect": [
+      0,
+      5,
+      81,
+      49
+    ],
+    "offset": [
+      0,
+      1
+    ],
+    "originalSize": [
+      81,
+      61
+    ]
+  }
+}

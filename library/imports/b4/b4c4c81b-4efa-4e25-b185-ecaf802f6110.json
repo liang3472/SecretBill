@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "books",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.5166666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "03db7c30-b988-4af5-8c3b-0c657d4d989e"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "290b3d91-fe97-464b-b972-8a5e9ce2033a"
+            }
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": {
+              "__uuid__": "8db34f77-7ca2-4aca-b76e-a2162f2af90c"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "03db7c30-b988-4af5-8c3b-0c657d4d989e"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

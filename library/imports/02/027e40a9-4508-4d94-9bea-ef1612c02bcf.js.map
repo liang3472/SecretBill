@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,EAAE,CAAC,KAAK,CAAC;AACP,aAAS,EAAE,CAAC,SAAS;;AAErB,YAAU,EAAE,EAAE;;;AAGd,QAAM,EAAE,kBAAY;AAClB,QAAI,CAAC,IAAI,CAAC,EAAE,CAAC,UAAU,EAAE,YAAY;AACnC,QAAE,CAAC,QAAQ,CAAC,SAAS,CAAC,KAAK,CAAC,CAAC;KAC9B,CAAC,CAAC;GACJ;;;;;;CAMF,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\n  extends: cc.Component,\n\n  properties: {},\n\n  // use this for initialization\n  onLoad: function () {\n    this.node.on('touchend', function () {\n      cc.director.loadScene('end');\n    });\n  }\n\n  // called every frame, uncomment this function to activate update callback\n  // update: function (dt) {\n\n  // },\n});\n"
+  ]
+}

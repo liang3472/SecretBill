@@ -1,0 +1,113 @@
+{
+  "version": "1.1.1",
+  "windows": {
+    "main": {
+      "main": true,
+      "url": "app://editor/index.html",
+      "windowType": "dockable",
+      "x": 1280,
+      "y": 23,
+      "width": 1920,
+      "height": 1057,
+      "layout": {
+        "children": [
+          {
+            "children": [
+              {
+                "active": 0,
+                "children": [
+                  "hierarchy"
+                ],
+                "height": 387,
+                "type": "panel",
+                "width": 490
+              },
+              {
+                "active": 0,
+                "children": [
+                  "assets"
+                ],
+                "height": 575.984375,
+                "type": "panel",
+                "width": 490
+              }
+            ],
+            "height": 966,
+            "type": "dock-v",
+            "width": 490
+          },
+          {
+            "children": [
+              {
+                "active": 0,
+                "children": [
+                  "scene"
+                ],
+                "height": 489.984375,
+                "type": "panel",
+                "width": 1033.984375
+              },
+              {
+                "active": 1,
+                "children": [
+                  "console",
+                  "timeline"
+                ],
+                "height": 473,
+                "type": "panel",
+                "width": 1033.984375
+              }
+            ],
+            "height": 966,
+            "type": "dock-v",
+            "width": 1033.984375
+          },
+          {
+            "active": 0,
+            "children": [
+              "inspector"
+            ],
+            "height": 966,
+            "type": "panel",
+            "width": 384
+          }
+        ],
+        "type": "dock-h"
+      },
+      "panels": [
+        "console",
+        "inspector",
+        "hierarchy",
+        "assets",
+        "scene",
+        "timeline"
+      ]
+    }
+  },
+  "panels": {
+    "timeline.bezier": {
+      "x": 760,
+      "y": 317,
+      "width": 400,
+      "height": 422
+    },
+    "builder": {
+      "x": 1933,
+      "y": 200,
+      "width": 500,
+      "height": 722
+    },
+    "timeline.event": {
+      "x": 760,
+      "y": 317,
+      "width": 400,
+      "height": 422
+    },
+    "code-editor": {
+      "x": 234,
+      "y": 49,
+      "width": 800,
+      "height": 622
+    }
+  }
+}

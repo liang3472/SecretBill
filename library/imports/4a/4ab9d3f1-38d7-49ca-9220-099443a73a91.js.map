@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,MAAM,CAAC,OAAO,GAAG;AACf,QAAM,EAAE;AACN,eAAW,EAAC;AACV,YAAM,EAAE,EAAE;AACV,aAAO,EAAE,CAAC,QAAQ,EAAE,iBAAiB,CAAC;AACtC,WAAK,EAAE,EAAE;AACT,UAAI,EAAE,EAAE;AACR,UAAI,EAAE,EAAE;AACR,SAAG,EAAE,EAAE;AACP,UAAI,EAAE,EAAE;AACR,eAAS,EAAE,EAAE;AACb,YAAM,EAAE,EAAE;KACX;AACD,UAAM,EAAE,EAAE;AACV,SAAK,EAAE,EAAE;GACV;AACD,UAAQ,EAAE,EAAE;;AAEZ,YAAU,EAAE,IAAI;AAChB,SAAO,EAAE,EAAE;AACX,iBAAe,EAAE,EAAE,CAAC,GAAG,CAAC,EAAE,KAAK,EAAE,CAAC,GAAG,CAAC,UAAU;;AAEhD,WAAS,EAAE,mBAAU,MAAM,EAAE;AAC3B,QAAI,CAAC,MAAM,GAAG,MAAM,CAAC;GACtB;;AAED,aAAW,EAAE,IAAI;AACjB,aAAW,EAAE,IAAI;AACjB,YAAU,EAAE,IAAI;AAChB,WAAS,EAAE,IAAI;AACf,aAAW,EAAE,IAAI;CAClB,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "module.exports = {\n  CONFiG: {\n    shareConfig:{\n      source: '', // 来源，用于统计\n      targets: ['weixin', 'weixin_timeline'], // 分享按钮\n      title: '',\n      text: '',\n      desc: '',\n      url: '',\n      link: '',\n      image_url: '',\n      imgUrl: ''\n    },\n    vipUrl: '',\n    goUrl: ''\n  },\n  MISSBILL: {},\n\n  musicState: true,\n  shareId: '',\n  shouldPlayAudio: cc.sys.os !== cc.sys.OS_ANDROID,\n\n  setConfig: function (config) {\n    this.CONFiG = config;\n  },\n\n  EVENT_SHARE: 3687,          // 传递温暖\n  EVENT_ELEME: 3688,          // 我要取暖\n  EVENT_BILL: 3689,           // 查看完整账单\n  EVENT_VIP: 3690,            // 购买会员卡\n  EVENT_START: 3692           // 开始我的8年记忆\n};\n"
+  ]
+}

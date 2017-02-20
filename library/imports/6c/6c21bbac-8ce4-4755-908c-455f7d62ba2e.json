@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "breath",
+    "texture": "10588c6f-a6e2-4c65-ad6b-97f99ecb34ae",
+    "atlas": "",
+    "rect": [
+      0,
+      3,
+      750,
+      652
+    ],
+    "offset": [
+      0,
+      -1.5
+    ],
+    "originalSize": [
+      750,
+      655
+    ]
+  }
+}
